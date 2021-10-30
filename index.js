@@ -1,4 +1,5 @@
-// OWNED BY WORTE, PUBLIC CODE WHICH CAN BE MODIFIED, PLEASE CREDIT ME IF YOU USE!!!
+// Creative Commons Zero v1.0 Universal LICENSE
+// READ LICENSE AND TERMS OF SERVICES BEFORE USING
 
 const http = require("http");
 const fs = require("fs");
