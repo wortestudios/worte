@@ -14,7 +14,7 @@ http.createServer((request, response) => {
             response.end();
         }
         else {
-            response.writeHead(200, {"Content-Type": database[request.url.split("/").pop().split(".").pop()]});
+            response.writeHead(200, {"Content-Type": database[url.split('/').pop().split('#').shift().split('?').shift().split(".")[1]]});
             response.write(content);
             response.end();
         }
