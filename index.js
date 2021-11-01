@@ -7,7 +7,7 @@ const configuration = JSON.parse(fs.readFileSync(("server/private/configuration.
 const database = JSON.parse(fs.readFileSync(("server/private/database.json")));
 
 http.createServer((request, response) => {
-    fs.readFile("server/" + configuration.root + request.url, (error, content) => {
+    fs.readFile(configuration.root + request.url, (error, content) => {
         if (error) {
             response.writeHead(404);
             response.write(JSON.stringify({"requestUrl": request.url, "statusCode": response.statusCode, "statusMessage": response.statusMessage}));
