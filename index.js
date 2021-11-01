@@ -3,8 +3,8 @@
 
 const http = require("http");
 const fs = require("fs");
-const configuration = JSON.parse(fs.readFileSync(("server/private/configuration.json")));
-const database = JSON.parse(fs.readFileSync(("server/private/database.json")));
+const configuration = JSON.parse(fs.readFileSync(("private/configuration.json")));
+const database = JSON.parse(fs.readFileSync(("private/database.json")));
 
 http.createServer((request, response) => {
     fs.readFile(configuration.root + request.url, (error, content) => {
