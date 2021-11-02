@@ -1,5 +1,4 @@
 {
     "port": 8000,
-    "root": "root",
-    "authorization": true 
+    "root": "root"
 }
